@@ -229,6 +229,6 @@ if __name__ == '__main__':
     parser.add_argument("--stream_chat", action="store_true")
     args = parser.parse_args()
     rank = int(os.environ.get('RANK', 0))
-    world_size = int(os.environ.get('WORLD_SIZE', 1))
+    world_size = int(os.environ.get('WORLD_SIZE', 4))
     args = parser.parse_args()   
     main(args)
